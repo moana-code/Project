@@ -1,7 +1,16 @@
-import axios from 'axios';
+namespace Backend.Models
+{
+    public class Usuario
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
 
-const api = axios.create({
-  baseURL: 'http://localhost:5000/api',  // URL do seu backend
-});
-
-export default api;
+        // Exemplo de uma validação
+        public bool ValidarEmail()
+        {
+            return Email.Contains("@");
+        }
+    }
+}
