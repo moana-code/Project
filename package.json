@@ -1,0 +1,6 @@
+{
+  "homepage": "https://moana-code.github.io/Frontend",
+  "dependencies": {
+    "react-router-dom": "^7.1.1"
+  }
+}
